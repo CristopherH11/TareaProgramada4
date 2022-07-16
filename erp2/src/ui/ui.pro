@@ -9,15 +9,18 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    crearproducto.cpp \
     creartienda.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
+    crearproducto.h \
     creartienda.h \
     mainwindow.h
 
 FORMS += \
+    crearproducto.ui \
     creartienda.ui \
     mainwindow.ui
 
@@ -25,20 +28,6 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
-
-win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../lib/release/ -ltienda
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../lib/debug/ -ltienda
-else:unix: LIBS += -L$$PWD/../lib/ -ltienda
-
-INCLUDEPATH += $$PWD/../lib/include
-DEPENDPATH += $$PWD/../lib/include
-
-win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../../../../TareaProgramada3-1/bin/release/ -ltienda
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../../../../TareaProgramada3-1/bin/debug/ -ltienda
-else:unix: LIBS += -L$$PWD/../../../../TareaProgramada3-1/bin/ -ltienda
-
-INCLUDEPATH += $$PWD/../../../../TareaProgramada3-1/bin/include
-DEPENDPATH += $$PWD/../../../../TareaProgramada3-1/bin/include
 
 win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../lib/release/ -ltienda
 else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../lib/debug/ -ltienda

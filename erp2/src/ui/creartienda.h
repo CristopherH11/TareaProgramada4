@@ -14,10 +14,10 @@ class crearTienda : public QDialog
 public:
     explicit crearTienda(QWidget *parent = nullptr);
     ~crearTienda();
-       std::string conseguirNombre();
-       std::string conseguirdirInt();
-       std::string conseguirdirFis();
-       std::string conseguirTelefono();
+    std::string conseguirNombre();
+    std::string conseguirdirInt();
+    std::string conseguirdirFis();
+    std::string conseguirTelefono();
 private slots:
     void on_edit_nombre_editingFinished();
     void on_edit_dirInt_editingFinished();

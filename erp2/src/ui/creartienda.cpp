@@ -32,7 +32,7 @@ void crearTienda::on_edit_telefono_editingFinished()
 }
 
 std::string crearTienda::conseguirNombre(){
-    return this->ui->edit_nombre->text().toStdString();;
+    return this->ui->edit_nombre->text().toStdString();
 
 }
 std::string crearTienda::conseguirdirInt(){

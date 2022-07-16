@@ -115,16 +115,6 @@
      <string>Guardar en archivo bInario</string>
     </property>
    </widget>
-   <widget class="QListView" name="listaProdcutos">
-    <property name="geometry">
-     <rect>
-      <x>370</x>
-      <y>10</y>
-      <width>401</width>
-      <height>301</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QWidget" name="formLayoutWidget_2">
     <property name="geometry">
      <rect>
@@ -169,6 +159,16 @@
     </property>
     <property name="text">
      <string>Crear tienda</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listaProductos">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>0</y>
+      <width>441</width>
+      <height>301</height>
+     </rect>
     </property>
    </widget>
   </widget>
