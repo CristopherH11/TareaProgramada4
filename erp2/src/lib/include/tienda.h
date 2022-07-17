@@ -24,7 +24,7 @@ namespace TP3 {
 
         void agregarProducto(Producto *nuevoProducto);
         void eliminarProducto(int numero);
-        void modificarProducto(int numero, int tipo);
+        void modificarProducto(int numero, int tipo, std::string valor);
 
         void guardarEnStreamBinario(std::ostream *streamSalida);
         void cargarDesdeStreamBinario(std::istream *streamEntrada);
@@ -37,6 +37,8 @@ namespace TP3 {
         std::string conseguirTelefono();
 
         Producto* conseguirProducto(int numero);
+
+        std::vector<Producto *> conseguirCatalogo();
 
         friend std::ostream& operator << (std::ostream &o, const Tienda *tienda);
     };

@@ -25,6 +25,10 @@ private slots:
 
     void on_boton_Modificar_clicked();
 
+    void on_boton_Cargar_clicked();
+
+    void on_boton_Guardar_clicked();
+
 private:
     Ui::MainWindow *ui;
     TP3::Tienda *nuevaTienda;

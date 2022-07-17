@@ -19,9 +19,6 @@ public:
     std::string conseguirdirFis();
     std::string conseguirTelefono();
 private slots:
-    void on_edit_nombre_editingFinished();
-    void on_edit_dirInt_editingFinished();
-    void on_edit_dirFis_editingFinished();
     void on_edit_telefono_editingFinished();
 
 private:

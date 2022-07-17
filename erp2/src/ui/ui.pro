@@ -11,17 +11,23 @@ CONFIG += c++17
 SOURCES += \
     crearproducto.cpp \
     creartienda.cpp \
+    definircambio.cpp \
+    elegirmodificar.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     crearproducto.h \
     creartienda.h \
+    definircambio.h \
+    elegirmodificar.h \
     mainwindow.h
 
 FORMS += \
     crearproducto.ui \
     creartienda.ui \
+    definircambio.ui \
+    elegirmodificar.ui \
     mainwindow.ui
 
 # Default rules for deployment.
